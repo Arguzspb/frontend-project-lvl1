@@ -1,0 +1,22 @@
+###############################################################
+#                                                             #
+#                 Make Eslint checking                        #
+#                                                             #
+###############################################################
+
+name: Eslint-check
+
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  Eslint:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+        
+      - name: Eslint checking
+        run: make lint
