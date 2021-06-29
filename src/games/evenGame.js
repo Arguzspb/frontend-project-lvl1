@@ -2,7 +2,7 @@ import getRandomInt from '../randomInteger.js';
 import executeGame from '../executeGame.js';
 
 const startRound = () => {
-  const randomInt = getRandomInt();
+  const randomInt = getRandomInt(1, 100);
   const isEven = (integer) => integer % 2 === 0;
   const correctAnswer = isEven(randomInt) ? 'yes' : 'no';
   return [randomInt, correctAnswer];
