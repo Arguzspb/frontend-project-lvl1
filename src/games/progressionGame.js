@@ -18,7 +18,7 @@ const startRound = () => {
   const randomElement = getRandomInt(0, progression.length - 1);
   const correctAnswer = String(progression[randomElement]);
   progression.splice(randomElement, 1, '..');
-  const expression = progression;
+  const expression = progression.join(' ');
   return [expression, correctAnswer];
 };
 
