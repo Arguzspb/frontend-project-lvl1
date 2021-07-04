@@ -10,3 +10,5 @@ https://asciinema.org/a/s4ez4jIkkUJizq6auXruJaCLn // start "is even game"
 https://asciinema.org/a/5BzghBy2CmLSKwKJPjTOnqMLW // start "calculation game"
 
 https://asciinema.org/a/FFkxKUCsE9IfXvtudy0WGiA8J // start "greatest common divisor game"
+
+https://asciinema.org/a/eoi8fDBy4o0GC0RHKoBHYdzha // start "arithmetic progression game"
