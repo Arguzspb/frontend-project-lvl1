@@ -11,10 +11,10 @@ export default (startRound, gameText) => {
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
       const wrongAnswer = `${userAnswer} is wrong answer ;(. Correct answer was ${correctAnswer}.
-                Let's try again, ${name}`;
+                Let's try again, ${name}!`;
       return console.log(wrongAnswer);
     }
     console.log('Correct!');
   }
-  return console.log(`Congratulations, ${name}`);
+  return console.log(`Congratulations, ${name}!`);
 };
