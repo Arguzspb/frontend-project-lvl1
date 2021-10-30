@@ -1,8 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Arguzspb/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Arguzspb/frontend-project-lvl1/actions)
 <a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
-
-[![eslint-check](https://github.com//Arguzspb/frontend-project-lvl1/workflows/eslint-check/badge.svg)](https://github.com//Arguzspb/frontend-project-lvl1/actions)
+<a href="https://github.com//Arguzspb/frontend-project-lvl1/actions"><img src="https://github.com//Arguzspb/frontend-project-lvl1/workflows/eslint-check/badge.svg" /></a>
 
 https://asciinema.org/a/s4ez4jIkkUJizq6auXruJaCLn // start "is even game"
 
