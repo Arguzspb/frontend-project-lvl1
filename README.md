@@ -9,10 +9,16 @@
 
 ## **brain-calc**
 
-https://asciinema.org/a/5BzghBy2CmLSKwKJPjTOnqMLW // start "calculation game"
+[![asciicast](https://asciinema.org/a/5BzghBy2CmLSKwKJPjTOnqMLW.svg)](https://asciinema.org/a/5BzghBy2CmLSKwKJPjTOnqMLW)
 
-https://asciinema.org/a/FFkxKUCsE9IfXvtudy0WGiA8J // start "greatest common divisor game"
+## **brain-GCD**
 
-https://asciinema.org/a/eoi8fDBy4o0GC0RHKoBHYdzha // start "arithmetic progression game"
+[![asciicast](https://asciinema.org/a/FFkxKUCsE9IfXvtudy0WGiA8J.svg)](https://asciinema.org/a/FFkxKUCsE9IfXvtudy0WGiA8J)
 
-https://asciinema.org/a/x0WQnfA996inDeudKrE0TA14V // start "prime game"
+## **brain-progression**
+
+[![asciicast](https://asciinema.org/a/eoi8fDBy4o0GC0RHKoBHYdzha.svg)](https://asciinema.org/a/eoi8fDBy4o0GC0RHKoBHYdzha)
+
+## **brain-prime**
+
+[![asciicast](https://asciinema.org/a/x0WQnfA996inDeudKrE0TA14V.svg)](https://asciinema.org/a/x0WQnfA996inDeudKrE0TA14V)
