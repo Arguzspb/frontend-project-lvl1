@@ -10,7 +10,7 @@ const getGreatestCommonDivisor = (firstNum, secondNum) => {
       return divisor;
     }
   }
-  // опять же, линтер ругается на отсутствие возврата из функции
+  return undefined; // опять же, линтер ругается на отсутствие возврата из функции
 };
 const makeRound = () => {
   const num1 = getRandom(1, 100);

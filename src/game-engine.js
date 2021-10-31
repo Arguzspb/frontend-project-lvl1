@@ -16,5 +16,5 @@ export default (makeRound, gameDescription) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${name}!`); // если убрать return, ругается линтер
+  return console.log(`Congratulations, ${name}!`); // если убрать return, ругается линтер
 };
