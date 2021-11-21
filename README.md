@@ -1,6 +1,5 @@
+### Install
 To install run in terminal `npm install`
-
-Below run examples:
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Arguzspb/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Arguzspb/frontend-project-lvl1/actions)
