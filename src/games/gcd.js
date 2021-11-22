@@ -1,25 +1,18 @@
-import getRandom from '../randomInteger.js';
+import genRandom from '../utils.js';
 import executeGame from '../game-engine.js';
 
-const gameDescription = 'Find the greatest common divisor of given numbers.';
+const description = 'Find the greatest common divisor of given numbers.';
 
-const getGreatestCommonDivisor = (firstNum, secondNum) => {
-  const initialCountdown = firstNum > secondNum ? secondNum : firstNum;
-  for (let divisor = initialCountdown; divisor >= 1; divisor -= 1) {
-    if (firstNum % divisor === 0 && secondNum % divisor === 0) {
-      return divisor;
-    }
-  }
-  return undefined; // опять же, линтер ругается на отсутствие возврата из функции
-};
-const makeRound = () => {
-  const num1 = getRandom(1, 100);
-  const num2 = getRandom(1, 100);
-  const correctAnswer = String(getGreatestCommonDivisor(num1, num2));
+const getGCD = (num1, num2) => (num2 === 0 ? num1 : getGCD(num2, num1 % num2));
+
+const runRound = () => {
+  const num1 = genRandom(1, 100);
+  const num2 = genRandom(1, 100);
+  const correctAnswer = String(getGCD(num1, num2));
   const expression = `${num1} ${num2}`;
   return [expression, correctAnswer];
 };
 
 export default () => {
-  executeGame(makeRound, gameDescription);
+  executeGame(runRound, description);
 };

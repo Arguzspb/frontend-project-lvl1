@@ -1,7 +1,7 @@
-import getRandom from '../randomInteger.js';
+import genRandom from '../utils.js';
 import executeGame from '../game-engine.js';
 
-const gameDescription = 'What number is missing in the progression?';
+const description = 'What number is missing in the progression?';
 
 const getProgression = (initialNum, length, step) => {
   let num = initialNum;
@@ -12,12 +12,12 @@ const getProgression = (initialNum, length, step) => {
   }
   return result;
 };
-const makeRound = () => {
-  const lengthProgression = getRandom(5, 9);
-  const stepProgression = getRandom(2, 10);
-  const startNumProgression = getRandom(1, 100);
+const runRound = () => {
+  const lengthProgression = genRandom(5, 9);
+  const stepProgression = genRandom(2, 10);
+  const startNumProgression = genRandom(1, 100);
   const progression = getProgression(startNumProgression, lengthProgression, stepProgression);
-  const randomElement = getRandom(0, progression.length - 1);
+  const randomElement = genRandom(0, progression.length - 1);
   const correctAnswer = String(progression[randomElement]);
   progression.splice(randomElement, 1, '..');
   const expression = progression.join(' ');
@@ -25,5 +25,5 @@ const makeRound = () => {
 };
 
 export default () => {
-  executeGame(makeRound, gameDescription);
+  executeGame(runRound, description);
 };

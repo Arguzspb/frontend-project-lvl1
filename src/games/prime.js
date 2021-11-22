@@ -1,7 +1,7 @@
-import getRandomInt from '../randomInteger.js';
+import genRandom from '../utils.js';
 import executeGame from '../game-engine.js';
 
-const gameDescription = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+const description = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 const isPrime = (num) => {
   if (num < 2) {
@@ -15,13 +15,13 @@ const isPrime = (num) => {
   return true;
 };
 
-const makeRound = () => {
-  const num = getRandomInt(1, 100);
+const runRound = () => {
+  const num = genRandom(1, 100);
   const correctAnswer = isPrime(num) ? 'yes' : 'no';
   const expression = num;
   return [expression, correctAnswer];
 };
 
 export default () => {
-  executeGame(makeRound, gameDescription);
+  executeGame(runRound, description);
 };

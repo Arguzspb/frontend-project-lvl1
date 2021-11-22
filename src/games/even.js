@@ -1,15 +1,16 @@
-import getRandomInt from '../randomInteger.js';
+import genRandom from '../utils.js';
 import executeGame from '../game-engine.js';
 
-const gameDescription = 'Answer "yes" if the number is even, otherwise answer "no" ';
+const description = 'Answer "yes" if the number is even, otherwise answer "no" ';
 
-const makeRound = () => {
-  const randomInt = getRandomInt(1, 100);
-  const isEven = (integer) => integer % 2 === 0;
-  const correctAnswer = isEven(randomInt) ? 'yes' : 'no';
-  return [randomInt, correctAnswer];
+const isEven = (integer) => integer % 2 === 0;
+
+const genRound = () => {
+  const num = genRandom(1, 100);
+  const correctAnswer = isEven(num) ? 'yes' : 'no';
+  return [num, correctAnswer];
 };
 
 export default () => {
-  executeGame(makeRound, gameDescription);
+  executeGame(genRound, description);
 };
