@@ -18,7 +18,7 @@ To install run in terminal `npm install`
 
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Arguzspb/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Arguzspb/frontend-project-lvl1/actions)
-<a href="https://codeclimate.com/github/codeclimate/codeclimate/maintainability"><img src="https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability" /></a>
+[![Maintainability](https://api.codeclimate.com/v1/badges/f864e76a8bece8db316d/maintainability)](https://codeclimate.com/github/Arguzspb/frontend-project-lvl1/maintainability)
 <a href="https://github.com//Arguzspb/frontend-project-lvl1/actions"><img src="https://github.com//Arguzspb/frontend-project-lvl1/workflows/eslint-check/badge.svg" /></a>
 
 ## **barain-even**
