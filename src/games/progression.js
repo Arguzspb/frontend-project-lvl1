@@ -3,9 +3,9 @@ import executeGame from '../game-engine.js';
 
 const description = 'What number is missing in the progression?';
 
-const getProgression = (initialNum, length, step) => {
-  let num = initialNum;
-  const result = [initialNum];
+const getProgression = (startNumber, length, step) => {
+  let num = startNumber;
+  const result = [startNumber];
   for (let i = 0; i < length; i += 1) {
     num += step;
     result.push(num);
@@ -13,15 +13,15 @@ const getProgression = (initialNum, length, step) => {
   return result;
 };
 const runRound = () => {
-  const lengthProgression = genRandom(5, 9);
-  const stepProgression = genRandom(2, 10);
-  const startNumProgression = genRandom(1, 100);
-  const progression = getProgression(startNumProgression, lengthProgression, stepProgression);
+  const progressionLength = genRandom(5, 9);
+  const progressionStep = genRandom(2, 10);
+  const firstNumber = genRandom(1, 100);
+  const progression = getProgression(firstNumber, progressionLength, progressionStep);
   const randomElement = genRandom(0, progression.length - 1);
-  const correctAnswer = String(progression[randomElement]);
+  const answer = progression[randomElement];
   progression.splice(randomElement, 1, '..');
   const expression = progression.join(' ');
-  return [expression, correctAnswer];
+  return [expression, String(answer)];
 };
 
 export default () => {

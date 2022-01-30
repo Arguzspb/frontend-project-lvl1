@@ -17,9 +17,8 @@ const isPrime = (num) => {
 
 const runRound = () => {
   const num = genRandom(1, 100);
-  const correctAnswer = isPrime(num) ? 'yes' : 'no';
-  const expression = num;
-  return [expression, correctAnswer];
+  const answer = isPrime(num) ? 'yes' : 'no';
+  return [num, answer];
 };
 
 export default () => {

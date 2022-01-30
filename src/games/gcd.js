@@ -8,9 +8,9 @@ const getGCD = (num1, num2) => (num2 === 0 ? num1 : getGCD(num2, num1 % num2));
 const runRound = () => {
   const num1 = genRandom(1, 100);
   const num2 = genRandom(1, 100);
-  const correctAnswer = String(getGCD(num1, num2));
+  const answer = getGCD(num1, num2);
   const expression = `${num1} ${num2}`;
-  return [expression, correctAnswer];
+  return [expression, String(answer)];
 };
 
 export default () => {
