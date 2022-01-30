@@ -1,3 +1,18 @@
+### Description
+This is the first educational project, that includes 5 console games:
+* Calculator. Arithmetic expressions to be evaluated.
+* Progression. Search for a missing number in a sequence of numbers
+* Definition of an even number
+* Determination of the greatest common factor
+* Definition of a prime number
+
+Games launch commands:
+* brain-calc
+* brain-even
+* brain-gcd
+* brain-prime
+* brain-progression
+
 ### Install
 To install run in terminal `npm install`
 
