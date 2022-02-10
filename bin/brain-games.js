@@ -1,4 +1,4 @@
 #!/usr/bin/env node
-import genIntroduction from '../src/cli.js';
+import printGreeting from '../src/cli.js';
 
-genIntroduction();
+printGreeting();

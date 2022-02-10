@@ -1,27 +1,27 @@
-import genRandom from '../utils.js';
+import generateRandomNumber from '../utils.js';
 import executeGame from '../game-engine.js';
 
 const description = 'What is the result of the expression?';
 
-const calc = (num1, num2, operation) => {
-  switch (operation) {
-    case '+': return num1 + num2;
-    case '-': return num1 - num2;
-    case '*': return num1 * num2;
+const calc = (number1, number2, operator) => {
+  switch (operator) {
+    case '+': return number1 + number2;
+    case '-': return number1 - number2;
+    case '*': return number1 * number2;
     default: return null;
   }
 };
 
-const runRound = () => {
-  const num1 = genRandom(1, 10);
-  const num2 = genRandom(num1, 10);
-  const operation = ['+', '-', '*'];
-  const chosenOperation = operation[genRandom(0, operation.length - 1)];
-  const answer = calc(num2, num1, chosenOperation);
-  const expression = `${num2} ${chosenOperation} ${num1}`;
+const generateRound = () => {
+  const number1 = generateRandomNumber(1, 10);
+  const number2 = generateRandomNumber(number1, 10);
+  const operator = ['+', '-', '*'];
+  const chosenOperator = operator[generateRandomNumber(0, operator.length - 1)];
+  const answer = calc(number2, number1, chosenOperator);
+  const expression = `${number2} ${chosenOperator} ${number1}`;
   return [expression, String(answer)];
 };
 
 export default () => {
-  executeGame(runRound, description);
+  executeGame(generateRound, description);
 };
