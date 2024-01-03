@@ -20,6 +20,7 @@ To install run in terminal `npm install`
 [![Actions Status](https://github.com/Arguzspb/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/Arguzspb/frontend-project-lvl1/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/f864e76a8bece8db316d/maintainability)](https://codeclimate.com/github/Arguzspb/frontend-project-lvl1/maintainability)
 <a href="https://github.com//Arguzspb/frontend-project-lvl1/actions"><img src="https://github.com//Arguzspb/frontend-project-lvl1/workflows/eslint-check/badge.svg" /></a>
+[![Test Coverage](https://api.codeclimate.com/v1/badges/9c9c79bd94e5c6f9fd4d/test_coverage)](https://codeclimate.com/github/Arguzspb/frontend-project-lvl1/test_coverage)
 
 ## **barain-even**
 
